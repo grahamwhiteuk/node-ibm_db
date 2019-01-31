@@ -40,7 +40,7 @@
             ],    
             'libraries' : ['-L$(IBM_DB_HOME)/lib -L$(IBM_DB_HOME)/lib64 ','-ldb2' ],
             'include_dirs': ['$(IBM_DB_HOME)/include'],
-            'cflags' : ['-g'],
+            'cflags' : ['-g','-DODBC64'],
           }],
         [ 'OS == "zos" ',
           { 'libraries' : ['dsnao64c.x'],
